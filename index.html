@@ -56,19 +56,17 @@
 <h2>Code display</h2>
 <blockquote>Exclude specific category from loop in WordPress</blockquote>
 <h3>stackoverflow link : <a href="https://stackoverflow.com/questions/26437228/exclude-specific-category-from-loop-in-wordpress" target="_blank">clcik here</a></h3>
-
 <pre>
-    <pre>
-        <?php query_posts('cat=-3'); ?>
+    
+        &lt;?php query_posts('cat=-3'); ?&gt;
 
-<?php if (have_posts()) : ?>
-<?php while (have_posts()) : the_post(); ?>
-  <h3></h3>	
-  <p><?php the_time('F jS, Y') ?></p>
-  <?php the_content(); ?>
-<?php endwhile; ?>
+        &lt;?php if (have_posts()) : ?&gt;
+        &lt;?php while (have_posts()) : the_post(); ?&gt;
+        &lt;h3>&lt;/h3&gt;	
+        &lt;p&gt;&lt;?php the_time('F jS, Y') ?&gt;&lt;/p&gt;
+        &lt;?php the_content(); ?&gt;
+        &lt;?php endwhile; ?&gt;
         </pre>
-</pre>
 <h3>CSS tricks link :<a href="https://css-tricks.com/snippets/wordpress/remove-specific-categories-from-the-loop/" target="_blank">click here</a></h3>
 </body>
 </html>
